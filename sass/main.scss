@@ -57,8 +57,9 @@ a {
                 transform: scale(.8, .8);
                 opacity: 0.8;
                 transition: transform 400ms,
-                opacity 400ms;                     
+                opacity 400ms;                       
         
+
                 a {
         
                     text-transform: uppercase;
@@ -78,8 +79,7 @@ a {
              &:hover {
                 transform: scale(1.0, 1.0);
                 opacity: 1;
-            }        
-
+            }
         }
             &::before {
             content: "";        
@@ -185,24 +185,34 @@ a {
     
             li {
                 margin-left: 2rem;
-    
+                padding-bottom: 6px;
+                transform: scale(.8, .8);
+                opacity: 0.8;
+                transition: transform 400ms,
+                opacity 400ms;                       
+        
+
                 a {
-                    color: $text-color;
-                    text-decoration: none;
+        
                     text-transform: uppercase;
-    
+                     color: #ffffff;
+
                     span {
                         font-size: 1rem;
                         margin-right: 10px;
                         font-weight: 600;
                     }
-    
-                    &:hover {
-                        color: lighten($color: #333030, $amount: 50%);
-                    }
                 }
-    
+            &.active {
+                border-bottom: 2px solid white;   
+
             }
+
+             &:hover {
+                transform: scale(1.0, 1.0);
+                opacity: 1;
+            }
+        }
     
             &::before {
                 content: "";
@@ -309,6 +319,7 @@ a {
                                     
         
             }
+            }
         
             h1 {
                 font-size: 140px;
@@ -323,7 +334,7 @@ a {
                 margin-right: 10rem;       
         
             }
-        }       
+              
         
         }
     }
