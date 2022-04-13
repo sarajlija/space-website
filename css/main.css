@@ -548,4 +548,8 @@ a {
   border: 0;
   opacity: 0.6;
 }
+
+#header-crew .button__group button.active {
+  background-color: coral;
+}
 /*# sourceMappingURL=main.css.map */

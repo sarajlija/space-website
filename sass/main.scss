@@ -490,7 +490,11 @@ a {
           border-radius: 50%;
           border: 0;
           opacity: 0.6;
+          
        }
+button.active {
+              background-color: coral;
+          }
     }
 
 }
