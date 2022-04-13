@@ -20,7 +20,7 @@ a {
 #header-home {
     position: relative;
     margin: 0;
-    height: 100vh;
+    height: 100%;
     color: #f3f0f0;
     font-size: 16px;
     background-image: url("/assets/home/background-home-desktop.jpg");
@@ -146,7 +146,7 @@ a {
 #header-destination {
     position: relative;
     margin: 0;
-    height: 100vh;
+    height: 100%;
     color: #ffffff;
     font-size: 16px;
     background-image: url("/assets/destination/background-destination-desktop.jpg");
@@ -249,7 +249,7 @@ a {
             img {
                 max-width: 65%;
                 height: auto;
-                animation: spin 4s linear infinite;
+                animation: spin 24s linear infinite;
         
             }
         
@@ -335,7 +335,6 @@ a {
 #header-crew {
     position: relative;
     margin: 0;
-    height: 100%;
     color: #f3f0f0;
     font-size: 16px;
     background-image: url("/assets/crew/background-crew-desktop.jpg");
@@ -348,7 +347,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     
     nav {
     
@@ -489,11 +488,11 @@ a {
           cursor: pointer;
           border-radius: 50%;
           border: 0;
-          opacity: 0.6;
-          
-       }
-button.active {
-              background-color: coral;
+          opacity: 0.4;
+          transition: opacity 500ms;          
+        }
+        button.active {
+              opacity: 1;
           }
     }
 

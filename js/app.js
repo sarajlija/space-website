@@ -30,13 +30,22 @@ const crew = [
 
 let buttons = document.querySelectorAll('.btn');
 
-console.log(buttons.length)
-buttons.forEach(button => {
-    button.addEventListener('click', function () {
-        
+//console.log(buttons.length)
+buttons.forEach((button,i) => {
+    button.addEventListener('click', function (e) {
+        const result = e.currentTarget.parentElement.previousElementSibling
+        result.innerHTML =`<div class="crew__title">         
+        <p class="crew__p"><span>02</span>meet your crew</p>
+        <h3>${crew[i].role}</h3> 
+        <h2>${crew[i].name}</h2>
+        <p>${crew[i].bio}</p> 
+      </div>
+      <div class="crew__img"><img src=${crew[i].images} alt="">
+      </div>`
         buttons.forEach(btns => btns.classList.remove('active'));
         this.classList.add('active');
-         console.log(buttons)
+        // console.log(buttons)
+        // console.log(i)
         
         
     });
@@ -45,15 +54,8 @@ buttons.forEach(button => {
 
     /*
      
-            const result = e.currentTarget.parentElement.previousElementSibling
+            
           
-            result.innerHTML =`<div class="crew__title">         
-        <p class="crew__p"><span>02</span>meet your crew</p>
-        <h3>${crew[i].role}</h3> 
-        <h2>${crew[i].name}</h2>
-        <p>${crew[i].bio}</p> 
-      </div>
-      <div class="crew__img"><img src=${crew[i].images} alt="">
-      </div>`
+            
                 
      */     
