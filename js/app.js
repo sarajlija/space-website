@@ -40,7 +40,7 @@ buttons.forEach((button,i) => {
         <h2>${crew[i].name}</h2>
         <p>${crew[i].bio}</p> 
       </div>
-      <div class="crew__img"><img src=${crew[i].images} alt="">
+      <div class="crew__img"><img src=${crew[i].images} alt="${crew[i].name}">
       </div>`
         buttons.forEach(btns => btns.classList.remove('active'));
         this.classList.add('active');
