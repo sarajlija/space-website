@@ -81,7 +81,12 @@ buttons.forEach((button,i) => {
 //TECHNOLOGY
 
 
-let buttonsTech = document.querySelectorAll('.btn-tech');
+
+window.addEventListener("click", function () {
+  
+    if (window.matchMedia("(min-width: 900px)").matches) {
+
+        let buttonsTech = document.querySelectorAll('.btn-tech');
 
 //console.log(buttons.length)
 buttonsTech.forEach((button, i) => {
@@ -104,12 +109,33 @@ buttonsTech.forEach((button, i) => {
     });
 });
 
-window.addEventListener("resize", function () {
-  
-    if (window.matchMedia("(min-width: 500px)").matches) {
        
         console.log("Screen width is at least 500px")
     } else {
+
+        let buttonsTech = document.querySelectorAll('.btn-tech');
+
+//console.log(buttons.length)
+buttonsTech.forEach((button, i) => {
+    button.addEventListener('click', function (e) {
+        var result = e.currentTarget.parentElement.previousElementSibling
+        
+        result.innerHTML = `
+        <div class="technology__title">
+        <p class="technology__p"><span>03</span>SPACE LAUNCH 101</p>
+        <h3>THE TERMINOLOGY...</h3>
+        <h2>${technology[i].name}</h2>
+        <p>${technology[i].description}</p>
+      </div>
+      <div class="technology__img"><img src=${technology[i].images.landscape} alt=${technology[i].name}>
+        </div>`
+        buttonsTech.forEach(btns => btns.classList.remove('active'));
+        this.classList.add('active');
+        // console.log(buttons)
+         console.log(i)
+    });
+});
+
         
         console.log("Screen less than 500px")
     }
