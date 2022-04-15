@@ -112,7 +112,7 @@ a {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Barlow", sans-serif;
+  font-family: "Roboto Slab", serif;
   letter-spacing: 5px;
   line-height: 1.1;
 }
@@ -564,7 +564,6 @@ a {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: 6rem;
 }
 #header-technology .wrapper #technology {
   /*max-width: $maxWidth;*/
