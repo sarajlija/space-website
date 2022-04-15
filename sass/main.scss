@@ -4,8 +4,8 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 100%;
-   
+  
+   font-size: 18px;
 
 }
 
@@ -18,10 +18,10 @@ a {
 /*HOME*/
 
 #header-home {    
-    height: 100vh;
+    height: 900px;
     margin: 0;
     color: #f3f0f0;
-    font-size: 16px;
+    
     background-image: url("/assets/home/background-home-desktop.jpg");
     background-position: top center;
     background-size: cover;
@@ -153,7 +153,7 @@ a {
 /*DESTINATION*/ 
 
 #header-destination {
-        height: 100vh;
+        height: auto;
         margin: 0;
         color: #f3f0f0;
         font-size: 16px;
@@ -354,7 +354,7 @@ a {
 
 /*CREW*/
 #header-crew {
-    height: 100vh;
+    height: auto;
     margin: 0;
     color: #f3f0f0;
     font-size: 16px;
@@ -521,7 +521,7 @@ a {
 }
 /*TECHNOLOGY*/
 #header-technology {
-        height: 100vh;
+        height: auto;
         margin: 0;
         color: #f3f0f0;
         font-size: 16px;
