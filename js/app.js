@@ -108,7 +108,7 @@ buttonsTech.forEach((button, i) => {
 
 /*********CHANGE BACKGROUND IMAGE AFTER RESIZE WINDOW */
 
-window.addEventListener("resize", function () {
+window.addEventListener('DOMContentLoaded', function () {
   
     if (window.matchMedia("(min-width: 1000px)").matches) {
 

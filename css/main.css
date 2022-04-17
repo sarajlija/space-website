@@ -264,7 +264,7 @@ a {
   background-color: hsla(0deg, 0%, 100%, 0.15);
   list-style: none;
   padding: 1.5rem 5rem;
-  z-index: 1;
+  margin: 0;
   /*
            &::before {
               content: "";        
@@ -282,6 +282,13 @@ a {
   opacity: 0.8;
   transition: transform 400ms, opacity 400ms;
 }
+#header-destination nav ul li.active {
+  border-bottom: 2px solid white;
+}
+#header-destination nav ul li:hover {
+  transform: scale(1, 1);
+  opacity: 1;
+}
 #header-destination nav ul li a {
   text-transform: uppercase;
   color: #ffffff;
@@ -290,13 +297,6 @@ a {
   font-size: 1rem;
   margin-right: 10px;
   font-weight: 600;
-}
-#header-destination nav ul li.active {
-  border-bottom: 2px solid white;
-}
-#header-destination nav ul li:hover {
-  transform: scale(1, 1);
-  opacity: 1;
 }
 #header-destination nav .toggle {
   display: none;

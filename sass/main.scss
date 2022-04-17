@@ -315,15 +315,27 @@ a {
                 background-color: hsla(0,0%,100%,.15);             
                 list-style: none;        
                 padding: 1.5rem 5rem;
-                z-index: 1;
+                margin: 0;
+           
     
                 li {               
                    
                     transform: scale(.8, .8);
                     opacity: 0.8;
                     transition: transform 400ms,
-                    opacity 400ms;                       
-            
+                    opacity 400ms;
+                  
+                    
+
+                    &.active {
+                    border-bottom: 2px solid white;   
+        
+                    }
+        
+                     &:hover {
+                        transform: scale(1.0, 1.0);
+                        opacity: 1;
+                    }
     
                     a {
             
@@ -336,15 +348,7 @@ a {
                             font-weight: 600;
                         }
                     }
-                &.active {
-                    border-bottom: 2px solid white;   
     
-                }
-    
-                 &:hover {
-                    transform: scale(1.0, 1.0);
-                    opacity: 1;
-                }
             
                
             }
