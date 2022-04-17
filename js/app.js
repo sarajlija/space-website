@@ -92,7 +92,7 @@ buttonsTech.forEach((button, i) => {
         
         result.innerHTML = `
         <div class="technology__title">
-        <p class="technology__p"><span>03</span>SPACE LAUNCH 101</p>
+      
         <h3>THE TERMINOLOGY...</h3>
         <h2>${technology[i].name}</h2>
         <p>${technology[i].description}</p>
@@ -121,7 +121,7 @@ window.addEventListener("resize", function () {
         
         result.innerHTML = `
         <div class="technology__title">
-        <p class="technology__p"><span>03</span>SPACE LAUNCH 101</p>
+        
         <h3>THE TERMINOLOGY...</h3>
         <h2>${technology[i].name}</h2>
         <p>${technology[i].description}</p>
@@ -149,7 +149,7 @@ window.addEventListener("resize", function () {
         
         result.innerHTML = `
         <div class="technology__title">
-        <p class="technology__p"><span>03</span>SPACE LAUNCH 101</p>
+       
         <h3>THE TERMINOLOGY...</h3>
         <h2>${technology[i].name}</h2>
         <p>${technology[i].description}</p>
