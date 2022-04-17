@@ -876,6 +876,16 @@ a {
             }
     
         }
+        .technology__p {
+            width: 100%;
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: lighter;
+            text-align: left;
+            margin-left: 6rem;
+
+        }
             
         .wrapper {
             width: 100%;
@@ -897,13 +907,7 @@ a {
                         width: 50%;
                         padding: 0 0rem;
 
-                    .technology__p {
-                        font-size: 28px;
-                        text-transform: uppercase;
-                        letter-spacing: 4px;
-                        font-weight: lighter;
 
-                    }
 
                     span {
                         margin-right: 6px;
@@ -978,18 +982,92 @@ a {
 @media (max-width:900px) {
     #header-technology {
         background-image: url("/assets/technology/background-technology-tablet.jpg");
+        text-align: center;
+        padding-bottom: 6rem;
        nav {
            hr {
                display:none;
            }
        }
+       .technology__p {
+        max-width: 50%;
+        font-size: 24px;       
+        text-align: left;
+       padding-left: 0rem;
+        margin: 1.5rem auto;
+       
+
+    }
        .wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         #technology {
             flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+             padding: 0 2rem;
+            .technology__title {
+                text-align: center;
+                display: block;
+                width: 100%;   
 
+            span {
+                margin-right: 6px;
+                color: #bababa;
+                font-weight: 600;
+
+            }
+
+            h3 {
+                font-size: 30px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                font-weight: lighter;
+                opacity: 0.6;
+                margin: 0;
+                margin-top: 4rem;
+            }
+
+            h2 {
+                font-size: 60px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                font-weight: lighter;
+                line-height: 1;
+                margin: 1rem 0;
+                font-family: 'Bellefair', serif;  
+
+            }
+
+            p {
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+
+        }
+        .technology__img img {
+            max-width: 90%;
+            height: auto;
+
+        }  
+
+        }
+        .button__group {
+            display: block;       
+            
+           
+           
+        
+            button {
+                margin:0 .5rem;
+            }
+        
+            button.active {
+                background-color: #ffffff;
+                color: #000000;
+                opacity: 1;
+            }
         }
        }
 
