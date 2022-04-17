@@ -1,4 +1,4 @@
-//CREWE COMMANDER
+//CREWE COMMANDER OBJECT MAKE FROM DATA.JSON
 
 const crew = [
       
@@ -27,6 +27,7 @@ const crew = [
         bio: "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.",
         }
     ]
+/*TECHNOLOGY OBJECT MODEL FROM DATA.JSON**/
 
     const technology = [
         {
@@ -55,6 +56,8 @@ const crew = [
         }
     ]
 
+//CHANGING INNER NAVIGATION I DESTINATION.HTML   
+
 let buttons = document.querySelectorAll('.btn');
 
 //console.log(buttons.length)
@@ -78,7 +81,8 @@ buttons.forEach((button,i) => {
     });
 });
 
-//TECHNOLOGY
+//CHANGING INNER NAVIGATION I TECHNOLOGY.HTML 
+
 let buttonsTech = document.querySelectorAll('.btn-tech');
 
 //console.log(buttons.length)
@@ -102,7 +106,7 @@ buttonsTech.forEach((button, i) => {
     });
 });
 
-
+/*********CHANGE BACKGROUND IMAGE AFTER RESIZE WINDOW */
 
 window.addEventListener("resize", function () {
   
@@ -111,7 +115,7 @@ window.addEventListener("resize", function () {
         let buttonsTech = document.querySelectorAll('.btn-tech');
 
 //console.log(buttons.length)
-buttonsTech.forEach((button, i) => {
+    buttonsTech.forEach((button, i) => {
     button.addEventListener('click', function (e) {
         var result = e.currentTarget.parentElement.previousElementSibling
         
@@ -128,8 +132,8 @@ buttonsTech.forEach((button, i) => {
         this.classList.add('active');
         // console.log(buttons)
          console.log(i)
+        });
     });
-});
 
        
         console.log("Screen width is at least 1000px")
@@ -137,8 +141,8 @@ buttonsTech.forEach((button, i) => {
 
         let buttonsTech = document.querySelectorAll('.btn-tech');
 
-//console.log(buttons.length)
-buttonsTech.forEach((button, i) => {
+    //console.log(buttons.length)
+    buttonsTech.forEach((button, i) => {
     button.addEventListener('click', function (e) {
        
         var result = e.currentTarget.parentElement.previousElementSibling
@@ -158,8 +162,7 @@ buttonsTech.forEach((button, i) => {
          //console.log(i)
     });
 });
-
-        
+       
         console.log("Screen less than 100px")
     }
 })
