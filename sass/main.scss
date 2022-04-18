@@ -269,7 +269,7 @@ a {
 }
 @media (max-width:600px) {
     #header-home {
-        height: 100vh;
+        height: auto;
         background-image: url("/assets/home/background-home-mobile.jpg");
         padding-bottom: 0;
         nav {           
@@ -422,6 +422,20 @@ a {
     }
 
         }
+        h3 {
+            width: 90%;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: lighter;        
+    
+            span {
+                margin-right: 6px;
+                color: #bababa;
+                font-weight: 600;
+            }
+        }
+
     article {
  max-width: $maxWidth;
     display: flex;
@@ -431,19 +445,7 @@ a {
     margin: 0 auto;
     margin-bottom: 6rem;
         
-        .destination__img {
-            p {
-                font-size: 28px;
-                text-transform: uppercase;
-                letter-spacing: 4px;
-                font-weight: lighter;
-            }
-        
-            span {
-                margin-right: 6px;
-                color: #bababa;
-                font-weight: 600;
-            }
+        .destination__img {         
             div {
                 display: flex;
                 align-items: center;
@@ -524,6 +526,12 @@ a {
                 font-family: 'Bellefair', serif;
                 text-transform: uppercase;
             }
+            hr {
+                width: 100%;
+                margin:1.5rem 0;
+                border: 1px solid #8a8a8a;
+                opacity: 0.6;
+            }
         
             .destination__meta {
                 width: 60%;
@@ -539,8 +547,18 @@ a {
     }
 
 @media (max-width:900px) {
-    #header-destination {     
-        flex-direction: column;   
+    #header-destination { 
+        height: auto;    
+        flex-direction: column;
+        ul.navbar__desktop {
+            li {
+                margin: 0 0.5rem;
+                a {
+                    font-size: 16px;
+                }
+            }
+
+          } 
         hr {
             display: none;
         }
@@ -866,7 +884,8 @@ a {
 }
 
 @media (max-width:900px) {
-        #header-crew {       
+        #header-crew { 
+            height: auto;      
         background-image: url("/assets/crew/background-crew-tablet.jpg");
         nav {
             hr {
@@ -928,6 +947,7 @@ a {
 }
 @media (max-width:600px) {
     #header-crew {
+
             nav {
                 ul.navbar__desktop {
                     display: none;
@@ -1162,7 +1182,9 @@ a {
 
 }
 @media (max-width:900px) {
+    
     #header-technology {
+        height: auto;
         background-image: url("/assets/technology/background-technology-tablet.jpg");
         text-align: center;
         padding-bottom: 6rem;

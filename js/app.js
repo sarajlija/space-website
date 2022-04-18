@@ -25,13 +25,6 @@ toggle.addEventListener('click', function () {
 
 
 
-
-
-
-
-
-
-
 //CREWE COMMANDER OBJECT MAKE FROM DATA.JSON
 const crew = [
       
@@ -89,7 +82,7 @@ const crew = [
         }
     ]
 
-//CHANGING INNER NAVIGATION I DESTINATION.HTML   
+//CHANGING INNER NAVIGATION AND DESTINATION.HTML   
 
 let buttons = document.querySelectorAll('.btn');
 
@@ -141,16 +134,16 @@ buttonsTech.forEach((button, i) => {
 
 /*********CHANGE BACKGROUND IMAGE AFTER RESIZE WINDOW */
 
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('resize', function () {
   
     if (window.matchMedia("(min-width: 1000px)").matches) {
-
+/*
         let buttonsTech = document.querySelectorAll('.btn-tech');
 
 //console.log(buttons.length)
     buttonsTech.forEach((button, i) => {
     button.addEventListener('click', function (e) {
-        var result = e.currentTarget.parentElement.previousElementSibling
+        let result = e.currentTarget.parentElement.previousElementSibling
         
         result.innerHTML = `
         <div class="technology__title">
@@ -166,19 +159,19 @@ window.addEventListener('DOMContentLoaded', function () {
         // console.log(buttons)
          console.log(i)
         });
-    });
+    });*/
 
        
         console.log("Screen width is at least 1000px")
     } else {
-
+/*
         let buttonsTech = document.querySelectorAll('.btn-tech');
 
     //console.log(buttons.length)
     buttonsTech.forEach((button, i) => {
     button.addEventListener('click', function (e) {
        
-        var result = e.currentTarget.parentElement.previousElementSibling
+        let result = e.currentTarget.parentElement.previousElementSibling
         
         result.innerHTML = `
         <div class="technology__title">
@@ -194,7 +187,7 @@ window.addEventListener('DOMContentLoaded', function () {
         // console.log(buttons)
          //console.log(i)
     });
-});
+});*/
        
         console.log("Screen less than 100px")
     }
