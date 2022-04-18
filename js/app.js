@@ -1,5 +1,38 @@
-//CREWE COMMANDER OBJECT MAKE FROM DATA.JSON
 
+//TOGGLE MENU
+
+const toggle= document.querySelector('.toggle')
+const bars = document.querySelector('.fa-bars')
+const xmark = document.querySelector('.fa-xmark')
+const navbarMobile = document.querySelector(".navbar__mobile")
+toggle.addEventListener('click', function () {
+    if (navbarMobile.classList.contains("show__menu")) {
+        navbarMobile.classList.remove("show__menu");
+        xmark.style.display = "none";
+        bars.style.display = "block";
+
+    } else {
+        navbarMobile.classList.add("show__menu");
+        xmark.style.display = "block";
+        bars.style.display = "none";
+
+    }
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+//CREWE COMMANDER OBJECT MAKE FROM DATA.JSON
 const crew = [
       
     {

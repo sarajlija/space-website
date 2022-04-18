@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -18,23 +18,21 @@
 
 <body>
   <header id="header-technology">
-    <nav>
-    
-      <div class="navbar__logo">
-        <img src="./assets/shared/logo.svg" alt="">
-      </div>
-      <hr>
-      <ul>
-        <li class="active"><a href="index.html"><span>00</span>Home</a></li>
-        <li><a href="destination-moon.html"><span>01</span>Destination</a></li>
-        <li><a href="crew-commander.html"><span>02</span>Crew</a></li>
-        <li><a href="technology-vehicle.html"><span>03</span>Technology</a></li>
-    
-      </ul>
-      <div class="toggle">
-        <span><i class="fa-solid fa-bars fa-lg"></i></span><span><i class="fa-solid fa-xmark fa-lg"></i></span>
-      </div>
-    </nav>
+        <nav>        
+          <div class="navbar__logo">
+            <img src="./assets/shared/logo.svg" alt="">
+          </div>
+          <hr>
+          <ul class="navbar__desktop navbar__mobile">
+            <li ><a href="index.html"><span>00</span>Home</a></li>
+            <li><a href="destination-moon.html"><span>01</span>Destination</a></li>
+            <li><a href="crew-commander.html"><span>02</span>Crew</a></li>
+            <li class="active"><a href="technology-vehicle.html"><span>03</span>Technology</a></li>        
+          </ul>
+          <div class="toggle">
+            <i class="fa-solid fa-bars fa-lg"></i><i class="fa-solid fa-xmark fa-lg"></i>
+          </div>
+        </nav>
     <p class="technology__p"><span>03</span>SPACE LAUNCH 101</p>
     <div class="wrapper">
      
