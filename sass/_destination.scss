@@ -174,10 +174,10 @@
                     transform: scale(.8, .8);
                     opacity: 0.8;
                     transition: transform 400ms,
-                        opacity 400ms;
+                    opacity 400ms;
 
                     a {
-
+                        font-size: larger;
                         text-transform: uppercase;
                         color: #ffffff;
 
@@ -214,8 +214,9 @@
 
         hr {
             width: 100%;
-            border: 1px solid #ffffff;
-            opacity: 0.6;
+           height: 1px;
+           color: #bababa;
+           
         }
 
         .destination__meta {
@@ -266,6 +267,22 @@
 
         hr {
             display: none;
+        }
+        h3 {
+            width: 80%;
+            font-size: 22px;
+            color: #bababa;
+            text-transform: uppercase;
+            font-weight: lighter;
+            text-align: left;
+            margin-left: 2rem;
+    
+            span {
+                margin-right: 10px;
+                color: #ffffff;
+                font-size: 24px;
+    
+            }
         }
 
         article {
@@ -395,6 +412,22 @@
 
             ul.show__menu {
                 transform: translateX(50%);
+            }
+        }
+        h3 {
+            width: 80%;
+            font-size: 22px;
+            color: #bababa;
+            text-transform: uppercase;
+            font-weight: lighter;
+            text-align: left;
+            margin-left: 6rem;
+    
+            span {
+                margin-right: 10px;
+                color: #ffffff;
+                font-size: 24px;
+    
             }
         }
 

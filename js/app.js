@@ -138,9 +138,9 @@ buttonsTech.forEach((button, i) => {
 
 /*********CHANGE BACKGROUND IMAGE AFTER RESIZE WINDOW */
 
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('resize', function () {
      
-    if (window.matchMedia("(min-width: 1000px)").matches) {
+    if (window.matchMedia("(min-width: 600px)").matches) {
 
         let buttonsTech = document.querySelectorAll('.btn-tech');
       
@@ -169,7 +169,7 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 
        
-        console.log("Screen width is at least 1000px")
+       // console.log("Screen width is at least 600px")
 
     } else {
 
@@ -199,7 +199,7 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 });
        
-        console.log("Screen less than 100px")
+     //   console.log("Screen less than 600px")
     }
 })
 

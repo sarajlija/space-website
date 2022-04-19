@@ -89,7 +89,7 @@
     .technology__p {
         width: 100%;
         color: #bababa;
-        font-size: 24px;
+        font-size: 22px;
         text-transform: uppercase;
         font-weight: lighter;
         text-align: left;
@@ -97,7 +97,7 @@
 
         span {
             margin-right: 10px;
-            font-size: 22px;
+            font-size: 24px;
             color: #ffffff;
         }
 
@@ -149,7 +149,7 @@
                     font-weight: lighter;
                     color: #ffffff;
                     line-height: 1;
-                    margin: 1rem 0;
+                    margin: 1.5rem 0;
                     font-family: 'Bellefair', serif;
 
                 }
@@ -350,6 +350,9 @@
             ul.show__menu {
                 transform: translateX(50%);
             }
+        }
+        #tehnology {
+            padding: 0 ;
         }
     }
 }
