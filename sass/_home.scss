@@ -1,5 +1,7 @@
+@import "mixins";
 
 #header-home {
+    @include flexBetween;
     height: 922px;
     margin: 0;
     color: #bababa;
@@ -8,11 +10,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     line-height: 1.5;
-    font-family: 'Barlow', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    font-family: 'Barlow', sans-serif; 
+    flex-direction: column;      
+    
+    
 
     nav {
         width: 100%;
@@ -102,10 +103,13 @@
         .banner__title {
             width: 50%;
             padding: 40px 40px 0;
+           
 
             span {
                 text-transform: uppercase;
                 margin-bottom: 0;
+                 font-size: 18px;
+                letter-spacing: 2px;
             }
 
             h1 {
