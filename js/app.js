@@ -82,6 +82,8 @@ const crew = [
         }
     ]
 
+
+
 //CHANGING INNER NAVIGATION AND DESTINATION.HTML   
 
 let buttons = document.querySelectorAll('.btn');
@@ -111,11 +113,12 @@ buttons.forEach((button,i) => {
 
 let buttonsTech = document.querySelectorAll('.btn-tech');
 
-//console.log(buttons.length)
+
 buttonsTech.forEach((button, i) => {
     button.addEventListener('click', function (e) {
-        var result = e.currentTarget.parentElement.previousElementSibling
         
+        var result = e.currentTarget.parentElement.previousElementSibling
+      console.log(result)
         result.innerHTML = `
         <div class="technology__title">
       
@@ -129,20 +132,23 @@ buttonsTech.forEach((button, i) => {
         this.classList.add('active');
         // console.log(buttons)
          console.log(i)
+       
     });
 });
 
 /*********CHANGE BACKGROUND IMAGE AFTER RESIZE WINDOW */
 
-window.addEventListener('resize', function () {
-  
+window.addEventListener('DOMContentLoaded', function () {
+     
     if (window.matchMedia("(min-width: 1000px)").matches) {
-/*
+
         let buttonsTech = document.querySelectorAll('.btn-tech');
+      
 
 //console.log(buttons.length)
     buttonsTech.forEach((button, i) => {
     button.addEventListener('click', function (e) {
+      
         let result = e.currentTarget.parentElement.previousElementSibling
         
         result.innerHTML = `
@@ -158,18 +164,21 @@ window.addEventListener('resize', function () {
         this.classList.add('active');
         // console.log(buttons)
          console.log(i)
+        
         });
-    });*/
+    });
 
        
         console.log("Screen width is at least 1000px")
+
     } else {
-/*
+
         let buttonsTech = document.querySelectorAll('.btn-tech');
 
     //console.log(buttons.length)
     buttonsTech.forEach((button, i) => {
     button.addEventListener('click', function (e) {
+      
        
         let result = e.currentTarget.parentElement.previousElementSibling
         
@@ -186,8 +195,9 @@ window.addEventListener('resize', function () {
         this.classList.add('active');
         // console.log(buttons)
          //console.log(i)
+        
     });
-});*/
+});
        
         console.log("Screen less than 100px")
     }

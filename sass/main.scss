@@ -46,11 +46,8 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;  
-   font-size: 18px;
+   font-size: 16px;
    
- 
- 
-
 }
 
 
@@ -62,9 +59,9 @@ a {
 /*HOME   */
 
 #header-home {    
-    height: 900px;
+    height: 922px;
     margin: 0;
-    color: #f3f0f0;    
+    color: #bababa;    
     background-image: url("/assets/home/background-home-desktop.jpg");
     background-position: top center;
     background-size: cover;
@@ -167,6 +164,7 @@ a {
                 margin-bottom: 0;
             }
             h1 {
+                color: #ffffff;
                 font-size: 9rem;
                 font-weight: lighter;           
                 margin-top: 0;
@@ -185,9 +183,8 @@ a {
             .btn__primary {
                 padding: 75px 50px ;
                 margin-bottom: 20px;
-                background-color: #ffffff;               
-              
-                font-size: 26px;
+                background-color: #ffffff;              
+                font-size: 22px;
                 text-transform: uppercase;
                 border-radius: 50%;
                 text-decoration: none;
@@ -269,7 +266,7 @@ a {
 }
 @media (max-width:600px) {
     #header-home {
-        height: auto;
+        height:900px;
         background-image: url("/assets/home/background-home-mobile.jpg");
         padding-bottom: 0;
         nav {           
@@ -335,9 +332,9 @@ a {
 /*DESTINATION*/ 
 
 #header-destination {
-        height: 900px;
+        height: auto;
         margin: 0;
-        color: #f3f0f0;    
+        color: #bababa;    
         background-image: url("/assets/destination/background-destination-desktop.jpg");
         background-position: top center;
         background-size: cover;
@@ -346,7 +343,7 @@ a {
         line-height: 1.5;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         
         nav {
@@ -423,21 +420,22 @@ a {
 
         }
         h3 {
-            width: 90%;
-            font-size: 24px;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-weight: lighter;        
-    
+            width: 80%;
+            font-size: 22px;
+            color: #bababa;
+            text-transform: uppercase;          
+            font-weight: lighter;
+            text-align: left;
+            margin-left: 6rem;
             span {
-                margin-right: 6px;
-                color: #bababa;
-                font-weight: 600;
+                margin-right: 10px;
+                color: #ffffff;
+                font-size: 24px;
+                
             }
         }
-
     article {
- max-width: $maxWidth;
+    max-width: $maxWidth;
     display: flex;
     gap:6rem;
     align-items: center;
@@ -445,7 +443,19 @@ a {
     margin: 0 auto;
     margin-bottom: 6rem;
         
-        .destination__img {         
+        .destination__img {
+            p {
+                font-size: 28px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                font-weight: lighter;
+            }
+        
+            span {
+                margin-right: 6px;
+                color: #bababa;
+                font-weight: 600;
+            }
             div {
                 display: flex;
                 align-items: center;
@@ -474,7 +484,7 @@ a {
             display: flex; 
             flex-direction: column;          
             width: 60%;
-            align-items: center;
+            align-items: flex-start;
         
             .destination__nav {
                 display: flex;
@@ -482,17 +492,15 @@ a {
                 ul {
                     display: flex;
                     list-style: none;
-                    padding: 1.5rem 1rem;
+                    padding: 1.5rem 0;
                     
                     li {
-                        margin-left: 2rem;
+                        margin-right: 2rem;
                         padding-bottom: 6px;
                         transform: scale(.8, .8);
                         opacity: 0.8;
                         transition: transform 400ms,
-                        opacity 400ms;                       
-                
-    
+                        opacity 400ms;                    
                         a {
                 
                             text-transform: uppercase;
@@ -520,6 +528,7 @@ a {
         }
         
             h1 {
+                color: #ffffff;
                 font-size: 140px;
                 font-weight: 300;
                 margin: 0;
@@ -528,37 +537,52 @@ a {
             }
             hr {
                 width: 100%;
-                margin:1.5rem 0;
-                border: 1px solid #8a8a8a;
+                border: 1px solid #ffffff;
                 opacity: 0.6;
             }
         
             .destination__meta {
-                width: 60%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-right: 10rem;       
-        
+                    width: 60%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-right: 10rem;
+                    .destination__dist {
+                        small {
+                            font-size: 14px;
+                            opacity: 0.6;
+                            }
+                            p {
+                                color: #ffffff;
+                                font-size: 24px;
+                            }
+                        }
+                    .destination__trevel {
+                        small {
+                            font-size: 14px;
+                            opacity: 0.6;
+                        }
+                        
+                        p {
+                            color: #ffffff;
+                            font-size: 24px;
+                        }
+                        
+                    
+                    }
+                        
             }
-              
         
         }
-    }
+              
+        
+}
+
 
 @media (max-width:900px) {
-    #header-destination { 
-        height: auto;    
-        flex-direction: column;
-        ul.navbar__desktop {
-            li {
-                margin: 0 0.5rem;
-                a {
-                    font-size: 16px;
-                }
-            }
-
-          } 
+    #header-destination {
+        height: auto;     
+        flex-direction: column;   
         hr {
             display: none;
         }
@@ -585,11 +609,11 @@ a {
         
         }
         
-        .destination__title {
-           
+        .destination__title {           
            
             width: 100%;
             justify-content: center;
+            align-items: center;
            
         
             .destination__nav {
@@ -719,9 +743,9 @@ a {
 
 /*CREW*/
 #header-crew {
-    height: 900px;
+    height: auto;
     margin: 0;
-    color: #f3f0f0;
+    color: #bababa;
     background-image: url("/assets/crew/background-crew-desktop.jpg");
     background-position: top center;
     background-size: cover;
@@ -810,7 +834,7 @@ a {
         display: flex;
         gap:6rem;
         align-items: center;
-        justify-content:center;     
+        justify-content:center;    
         margin: 0 auto;
         margin-bottom: 6rem;
         .crew__title {
@@ -819,17 +843,18 @@ a {
             padding: 0 4rem;
             
             .crew__p {
-                font-size: 28px;
-                text-transform: uppercase;
-                letter-spacing: 4px;                
+                color: #bababa;
+                font-size: 22px;
+                text-transform: uppercase; 
                 font-weight: lighter;
-               
+                      
             }
             
             span {
+                font-size: 24px;
                 margin-right: 6px;
-                color: #bababa;
-                font-weight: 600;
+                color: #ffffff;
+               
 
             }
             h3 {
@@ -843,6 +868,7 @@ a {
             }
             h2 {
                 font-size: 80px;
+                color: #ffffff;
                 text-transform: uppercase;
                 letter-spacing: 4px;
                 font-weight: lighter;
@@ -884,8 +910,7 @@ a {
 }
 
 @media (max-width:900px) {
-        #header-crew { 
-            height: auto;      
+        #header-crew {       
         background-image: url("/assets/crew/background-crew-tablet.jpg");
         nav {
             hr {
@@ -947,7 +972,6 @@ a {
 }
 @media (max-width:600px) {
     #header-crew {
-
             nav {
                 ul.navbar__desktop {
                     display: none;
@@ -997,7 +1021,7 @@ a {
 #header-technology {
         height: 900px;
         margin: 0;
-        color: #f3f0f0;
+        color: #bababa;
         background-image: url("/assets/technology/background-technology-desktop.jpg");
         background-position: top center;
         background-size: cover;
@@ -1081,12 +1105,17 @@ a {
     }
     .technology__p {
             width: 100%;
-            font-size: 28px;
-            text-transform: uppercase;
-            letter-spacing: 4px;
+            color: #bababa;
+            font-size: 24px;
+            text-transform: uppercase;           
             font-weight: lighter;
             text-align: left;
             margin-left: 6rem;
+            span {
+                margin-right: 10px;
+                font-size: 22px;
+                color: #ffffff;
+            }
 
     }
             
@@ -1113,7 +1142,7 @@ a {
 
                     span {
                         margin-right: 6px;
-                        color: #bababa;
+                        color: #ffffff;
                         font-weight: 600;
 
                     }
@@ -1133,6 +1162,7 @@ a {
                         text-transform: uppercase;
                         letter-spacing: 4px;
                         font-weight: lighter;
+                        color: #ffffff;
                         line-height: 1;
                         margin: 1rem 0;
                         font-family: 'Bellefair', serif;  
@@ -1158,8 +1188,7 @@ a {
                 flex-direction: column;
                 justify-content: center;
                 margin: 0 2rem;
-               
-            
+             
                 button {
                     padding: 2.2rem;
                     cursor: pointer;
@@ -1182,21 +1211,25 @@ a {
 
 }
 @media (max-width:900px) {
-    
     #header-technology {
         height: auto;
         background-image: url("/assets/technology/background-technology-tablet.jpg");
         text-align: center;
         padding-bottom: 6rem;
        nav {
+           ul {
+               li {
+                   margin:0 0.5rem; 
+               }
+           }
            hr {
                display:none;
            }
        }
        .technology__p {
-        max-width: 50%;
+        max-width: 80%;
         font-size: 24px;       
-        text-align: left;
+        text-align: center;
        padding-left: 0rem;
         margin: 1.5rem auto;
        
