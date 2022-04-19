@@ -1,35 +1,3 @@
-/* barlow-condensed-regular - latin */
-@font-face {
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/barlow-condensed-v11-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/barlow-condensed-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-condensed-v11-latin-regular.woff2") format("woff2"), url("../fonts/barlow-condensed-v11-latin-regular.woff") format("woff"), url("../fonts/barlow-condensed-v11-latin-regular.ttf") format("truetype"), url("../fonts/barlow-condensed-v11-latin-regular.svg#BarlowCondensed") format("svg");
-  /* Legacy iOS */
-}
-
-/* bellefair-regular - latin */
-@font-face {
-  font-family: 'Bellefair';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/bellefair-v12-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/bellefair-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bellefair-v12-latin-regular.woff2") format("woff2"), url("../fonts/bellefair-v12-latin-regular.woff") format("woff"), url("../fonts/bellefair-v12-latin-regular.ttf") format("truetype"), url("../fonts/bellefair-v12-latin-regular.svg#Bellefair") format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Mate SC';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/mate-sc-v19-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/mate-sc-v19-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/mate-sc-v19-latin-regular.woff2") format("woff2"), url("../fonts/mate-sc-v19-latin-regular.woff") format("woff"), url("../fonts/mate-sc-v19-latin-regular.ttf") format("truetype"), url("../fonts/mate-sc-v19-latin-regular.svg#MateSC") format("svg");
-  /* Legacy iOS */
-}
-
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -42,7 +10,6 @@ a {
   text-decoration: none;
 }
 
-/*HOME   */
 #header-home {
   height: 922px;
   margin: 0;
@@ -52,7 +19,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   line-height: 1.5;
-  font-family: 'Barlow',sans-serif;
+  font-family: 'Barlow', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,7 +323,6 @@ a {
   }
 }
 
-/*DESTINATION*/
 #header-destination {
   height: auto;
   margin: 0;
@@ -365,7 +331,7 @@ a {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Barlow',sans-serif;
+  font-family: 'Barlow', sans-serif;
   line-height: 1.5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -808,7 +774,6 @@ a {
   }
 }
 
-/*CREW*/
 #header-crew {
   height: auto;
   margin: 0;
@@ -817,7 +782,7 @@ a {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Barlow',sans-serif;
+  font-family: 'Barlow', sans-serif;
   line-height: 1.5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1122,7 +1087,6 @@ a {
   }
 }
 
-/*TECHNOLOGY*/
 #header-technology {
   height: 900px;
   margin: 0;
@@ -1145,7 +1109,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: 'Barlow',sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 #header-technology nav {
@@ -1499,4 +1463,42 @@ a {
             transform: translateX(50%);
   }
 }
+
+/* barlow-condensed-regular - latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-condensed-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/barlow-condensed-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-condensed-v11-latin-regular.woff2") format("woff2"), url("../fonts/barlow-condensed-v11-latin-regular.woff") format("woff"), url("../fonts/barlow-condensed-v11-latin-regular.ttf") format("truetype"), url("../fonts/barlow-condensed-v11-latin-regular.svg#BarlowCondensed") format("svg");
+  /* Legacy iOS */
+}
+
+/* bellefair-regular - latin */
+@font-face {
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bellefair-v12-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/bellefair-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bellefair-v12-latin-regular.woff2") format("woff2"), url("../fonts/bellefair-v12-latin-regular.woff") format("woff"), url("../fonts/bellefair-v12-latin-regular.ttf") format("truetype"), url("../fonts/bellefair-v12-latin-regular.svg#Bellefair") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Mate SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mate-sc-v19-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/mate-sc-v19-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/mate-sc-v19-latin-regular.woff2") format("woff2"), url("../fonts/mate-sc-v19-latin-regular.woff") format("woff"), url("../fonts/mate-sc-v19-latin-regular.ttf") format("truetype"), url("../fonts/mate-sc-v19-latin-regular.svg#MateSC") format("svg");
+  /* Legacy iOS */
+}
+
+/* BODY*/
+/*HOME   */
+/*DESTINATION*/
+/*CREW*/
+/*TECHNOLOGY*/
 /*# sourceMappingURL=main.css.map */
